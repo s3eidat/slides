@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' data: blob:; connect-src 'self' data: blob:; worker-src 'self' blob:; manifest-src 'self'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Slides — Free Presentation Maker with Presenter View &amp; PPTX Export | S3eidat Tools</title>
+<meta name="description" content="Make presentations in your browser: 9 themes, layouts, bullets, images, shapes, tables, charts, speaker notes, transitions and animations. Present full screen with a presenter view, export .pptx, PDF or PNG. Free, no sign-up, nothing uploaded.">
+<meta property="og:title" content="Slides — free, private presentation maker">
+<meta property="og:description" content="Themes, charts, tables, presenter view and .pptx / PDF export. No sign-up. Runs 100% in your browser.">
+<link rel="icon" href="kit/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="kit/kit.css">
+<link rel="stylesheet" href="app.css">
+<script src="kit/kit.js"></script>
+<!--s3:seo-->
+<link rel="canonical" href="https://s3eidat.github.io/slides/">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0d0f12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="S3eidat Tools">
+<meta property="og:url" content="https://s3eidat.github.io/slides/">
+<meta property="og:image" content="https://s3eidat.github.io/slides/screenshot.png">
+<meta property="og:image:width" content="1280"><meta property="og:image:height" content="800">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Slides — Make presentations free and present anywhere">
+<meta name="twitter:description" content="Make presentations free and present anywhere. Free, private and runs 100% in your browser: no sign-up, no uploads.">
+<meta name="twitter:image" content="https://s3eidat.github.io/slides/screenshot.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Slides", "url": "https://s3eidat.github.io/slides/", "description": "Make presentations free and present anywhere. Free, private and runs 100% in your browser: no sign-up, no uploads.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (web browser)", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "image": "https://s3eidat.github.io/slides/screenshot.png", "author": {"@type": "Person", "name": "s3eidat", "url": "https://github.com/s3eidat"}}</script>
+<!--/s3:seo-->
+</head>
+<body data-tool="slides">
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="d-undo" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></symbol>
+  <symbol id="d-redo" viewBox="0 0 24 24"><path d="m15 14 5-5-5-5"/><path d="M20 9H9.5a5.5 5.5 0 0 0 0 11H13"/></symbol>
+  <symbol id="d-tpl" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="2.5"/><path d="M3.5 9.5h17M9.5 9.5v11"/></symbol>
+  <symbol id="d-text" viewBox="0 0 24 24"><path d="M5 6.5V4.5h14v2M12 4.5v15M9 19.5h6"/></symbol>
+  <symbol id="d-shapes" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4.5"/><rect x="12.5" y="12.5" width="8" height="8" rx="1.5"/><path d="M16.5 3.5 20.5 10h-8z"/></symbol>
+  <symbol id="d-upload" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="2.5"/><circle cx="9" cy="9" r="1.8"/><path d="m20.5 15-4.5-4.5L5.5 20.5"/></symbol>
+  <symbol id="d-layers" viewBox="0 0 24 24"><path d="m12 3.5 8.5 4.5-8.5 4.5L3.5 8z"/><path d="m3.5 12 8.5 4.5 8.5-4.5"/><path d="m3.5 16 8.5 4.5 8.5-4.5"/></symbol>
+  <symbol id="d-folder" viewBox="0 0 24 24"><path d="M3.5 6.5a2 2 0 0 1 2-2h4l2 2.5h7a2 2 0 0 1 2 2v8.5a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/></symbol>
+  <symbol id="d-al-l" viewBox="0 0 24 24"><path d="M4 3v18"/><rect x="7" y="6" width="12" height="4" rx="1"/><rect x="7" y="14" width="7" height="4" rx="1"/></symbol>
+  <symbol id="d-al-c" viewBox="0 0 24 24"><path d="M12 3v18"/><rect x="5" y="6" width="14" height="4" rx="1"/><rect x="8" y="14" width="8" height="4" rx="1"/></symbol>
+  <symbol id="d-al-r" viewBox="0 0 24 24"><path d="M20 3v18"/><rect x="5" y="6" width="12" height="4" rx="1"/><rect x="10" y="14" width="7" height="4" rx="1"/></symbol>
+  <symbol id="d-al-t" viewBox="0 0 24 24"><path d="M3 4h18"/><rect x="6" y="7" width="4" height="12" rx="1"/><rect x="14" y="7" width="4" height="7" rx="1"/></symbol>
+  <symbol id="d-al-m" viewBox="0 0 24 24"><path d="M3 12h18"/><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="8" width="4" height="8" rx="1"/></symbol>
+  <symbol id="d-al-b" viewBox="0 0 24 24"><path d="M3 20h18"/><rect x="6" y="5" width="4" height="12" rx="1"/><rect x="14" y="10" width="4" height="7" rx="1"/></symbol>
+  <symbol id="d-dist-h" viewBox="0 0 24 24"><path d="M3 4v16M21 4v16"/><rect x="9" y="7" width="6" height="10" rx="1"/></symbol>
+  <symbol id="d-dist-v" viewBox="0 0 24 24"><path d="M4 3h16M4 21h16"/><rect x="7" y="9" width="10" height="6" rx="1"/></symbol>
+  <symbol id="d-group" viewBox="0 0 24 24"><path d="M3 7V3h4M17 3h4v4M21 17v4h-4M7 21H3v-4"/><rect x="7" y="7" width="6" height="6" rx="1"/><rect x="11" y="11" width="6" height="6" rx="1"/></symbol>
+  <symbol id="d-ungroup" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="8" height="8" rx="1"/><rect x="12.5" y="12.5" width="8" height="8" rx="1"/></symbol>
+  <symbol id="d-front" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="1.5"/><path d="M4 15V5a1 1 0 0 1 1-1h10"/></symbol>
+  <symbol id="d-up" viewBox="0 0 24 24"><path d="M12 19V6M6.5 11.5 12 6l5.5 5.5"/></symbol>
+  <symbol id="d-down" viewBox="0 0 24 24"><path d="M12 5v13M6.5 12.5 12 18l5.5-5.5"/></symbol>
+  <symbol id="d-back" viewBox="0 0 24 24"><rect x="4" y="4" width="12" height="12" rx="1.5"/><path d="M20 9v10a1 1 0 0 1-1 1H9"/></symbol>
+  <symbol id="d-fliph" viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M8.5 6.5 3.5 17h5zM15.5 6.5l5 10.5h-5z"/></symbol>
+  <symbol id="d-flipv" viewBox="0 0 24 24"><path d="M3 12h18"/><path d="M6.5 8.5 17 3.5v5zM6.5 15.5l10.5 5v-5z"/></symbol>
+  <symbol id="d-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="d-eyeoff" viewBox="0 0 24 24"><path d="M4 4l16 16M10 5.8A9.6 9.6 0 0 1 12 5.5c6 0 9.5 6.5 9.5 6.5a17 17 0 0 1-3 3.7M6.6 7.4A16 16 0 0 0 2.5 12S6 18.5 12 18.5c1.5 0 2.9-.4 4.1-1"/></symbol>
+  <symbol id="d-unlock" viewBox="0 0 24 24"><rect x="4.5" y="11" width="15" height="10" rx="2"/><path d="M8 11V7.5a4 4 0 0 1 7.7-1.5"/></symbol>
+  <symbol id="d-zin" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5M8 11h6M11 8v6"/></symbol>
+  <symbol id="d-zout" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5M8 11h6"/></symbol>
+  <symbol id="d-fit" viewBox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/></symbol>
+  <symbol id="d-resize" viewBox="0 0 24 24"><rect x="3.5" y="9.5" width="11" height="11" rx="1.5"/><path d="M13 3.5h7.5V11M20.5 3.5l-7 7"/></symbol>
+  <symbol id="d-keys" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></symbol>
+  <symbol id="d-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol>
+  <symbol id="d-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+  <symbol id="d-new" viewBox="0 0 24 24"><path d="M14 3.5H6.5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V9z"/><path d="M14 3.5V9h5.5M12 12v6M9 15h6"/></symbol>
+  <symbol id="d-save" viewBox="0 0 24 24"><path d="M5 3.5h11.5l3.5 3.5v12a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 3.5 19V5A1.5 1.5 0 0 1 5 3.5z"/><path d="M7.5 3.5v5h8v-5M7.5 20.5v-6h9v6"/></symbol>
+  <symbol id="d-black" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="13" rx="2" fill="currentColor"/><path d="M8 21h8"/></symbol>
+  <symbol id="d-white" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="13" rx="2"/><path d="M8 21h8"/></symbol>
+  <symbol id="d-window" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="13" height="10" rx="1.5"/><rect x="9" y="9.5" width="12.5" height="10" rx="1.5"/></symbol>
+  <symbol id="d-present" viewBox="0 0 24 24"><path d="M3 4h18M4.5 4v10.5h15V4M12 14.5V18M8.5 21l3.5-3 3.5 3"/><path d="m10.5 7.5 4 2.3-4 2.2z"/></symbol>
+  <symbol id="d-table" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 9.5v10M15 9.5v10"/></symbol>
+  <symbol id="d-chart" viewBox="0 0 24 24"><path d="M4 20h16M6.5 20v-6M11 20V9M15.5 20v-8.5M20 20V5"/></symbol>
+  <symbol id="d-slide" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="1.5"/><path d="M12 9v4M10 11h4"/></symbol>
+  <symbol id="d-sorter" viewBox="0 0 24 24"><rect x="3.5" y="4" width="7" height="5" rx="1"/><rect x="13.5" y="4" width="7" height="5" rx="1"/><rect x="3.5" y="11.5" width="7" height="5" rx="1"/><rect x="13.5" y="11.5" width="7" height="5" rx="1"/><path d="M4 20h16"/></symbol>
+  <symbol id="d-line" viewBox="0 0 24 24"><path d="M4 19 20 5"/></symbol>
+  <symbol id="d-arrow" viewBox="0 0 24 24"><path d="M4 19 19 5M11.5 5H19v7.5"/></symbol>
+  <symbol id="d-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></symbol>
+  <symbol id="d-caret" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+  <symbol id="d-indent" viewBox="0 0 24 24"><path d="M4 5h16M10 10h10M10 14h10M4 19h16M4 9.5l3 2.5-3 2.5"/></symbol>
+  <symbol id="d-outdent" viewBox="0 0 24 24"><path d="M4 5h16M10 10h10M10 14h10M4 19h16M7 9.5 4 12l3 2.5"/></symbol>
+  <symbol id="d-bullets" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1.2"/><circle cx="4.5" cy="12" r="1.2"/><circle cx="4.5" cy="18" r="1.2"/></symbol>
+  <symbol id="d-numbers" viewBox="0 0 24 24"><path d="M10 6h10M10 12h10M10 18h10M4 4.5l1.5-1v5M3.5 14.5c0-1 .7-1.6 1.5-1.6s1.5.5 1.5 1.3c0 1.3-3 2-3 3.8h3"/></symbol>
+  <symbol id="d-none" viewBox="0 0 24 24"><path d="M5 6h14M5 12h14M5 18h9"/></symbol>
+</svg>
+<main class="s3-main sl-main">
+  <section class="sl-hero">
+    <h1>Slides</h1>
+    <p>Make a presentation, present it with your notes, download .pptx or PDF. Free, no sign-up. Your decks stay on this device.</p>
+  </section>
+
+  <div class="sl-app" id="app">
+    <div class="sl-top" role="toolbar" aria-label="Presentation">
+      <button class="btn small" id="btnNew" type="button" title="New presentation"><svg class="i"><use href="#d-new"/></svg><span class="sl-lbl">New</span></button>
+      <label class="sl-name"><span class="sr">Presentation name</span><input class="input" id="deckName" dir="auto" maxlength="120" value="Untitled presentation"></label>
+      <div class="sl-grp">
+        <button class="btn ghost icon small" id="btnUndo" type="button" title="Undo (Ctrl+Z)" aria-label="Undo"><svg class="i"><use href="#d-undo"/></svg></button>
+        <button class="btn ghost icon small" id="btnRedo" type="button" title="Redo (Ctrl+Shift+Z)" aria-label="Redo"><svg class="i"><use href="#d-redo"/></svg></button>
+      </div>
+      <span class="chip sl-save" id="saveState">Not saved yet</span>
+      <span class="grow"></span>
+      <button class="btn ghost small" id="btnKeys" type="button" title="Keyboard shortcuts (?)" aria-label="Keyboard shortcuts"><svg class="i"><use href="#d-keys"/></svg></button>
+      <button class="btn small" id="btnDecks" type="button" title="Your presentations and .s3slides files"><svg class="i"><use href="#d-folder"/></svg><span class="sl-lbl">Open</span></button>
+      <button class="btn small" id="btnSave" type="button" title="Save a .s3slides file (Ctrl+S)"><svg class="i"><use href="#d-save"/></svg><span class="sl-lbl">Save file</span></button>
+      <button class="btn small" id="btnExport" type="button" title="Download .pptx, PDF or PNG (Ctrl+E)"><svg class="i"><use href="#i-download"/></svg><span class="sl-lbl">Download</span></button>
+      <span class="sl-split">
+        <button class="btn primary small" id="btnPresent" type="button" title="Present from the beginning (F5)"><svg class="i"><use href="#d-present"/></svg>Present</button>
+        <button class="btn primary small icon" id="btnPresentMenu" type="button" title="More ways to present" aria-label="More ways to present" aria-haspopup="true"><svg class="i"><use href="#d-caret"/></svg></button>
+      </span>
+    </div>
+
+    <div class="sl-ins" role="toolbar" aria-label="Insert">
+      <span class="sl-split">
+        <button class="btn small" id="btnNewSlide" type="button" title="New slide (Ctrl+M)"><svg class="i"><use href="#d-slide"/></svg><span>New slide</span></button>
+        <button class="btn small icon" id="btnLayouts" type="button" title="New slide with a layout" aria-label="New slide with a layout" aria-haspopup="true"><svg class="i"><use href="#d-caret"/></svg></button>
+      </span>
+      <span class="sl-sep"></span>
+      <button class="btn ghost small" id="insText" type="button" title="Text box (T)"><svg class="i"><use href="#d-text"/></svg><span class="sl-lbl">Text</span></button>
+      <label class="btn ghost small" id="insImage" title="Picture from this device"><svg class="i"><use href="#i-image"/></svg><span class="sl-lbl">Image</span><input type="file" accept="image/png,image/jpeg,image/webp,image/gif,image/svg+xml,.svg" multiple hidden></label>
+      <button class="btn ghost small" id="insShape" type="button" title="Shapes" aria-haspopup="true"><svg class="i"><use href="#d-shapes"/></svg><span class="sl-lbl">Shape</span></button>
+      <button class="btn ghost small" id="insLine" type="button" title="Line or arrow" aria-haspopup="true"><svg class="i"><use href="#d-arrow"/></svg><span class="sl-lbl">Line</span></button>
+      <button class="btn ghost small" id="insIcon" type="button" title="Icons" aria-haspopup="true"><svg class="i"><use href="#d-star"/></svg><span class="sl-lbl">Icon</span></button>
+      <button class="btn ghost small" id="insTable" type="button" title="Table" aria-haspopup="true"><svg class="i"><use href="#d-table"/></svg><span class="sl-lbl">Table</span></button>
+      <button class="btn ghost small" id="insChart" type="button" title="Chart" aria-haspopup="true"><svg class="i"><use href="#d-chart"/></svg><span class="sl-lbl">Chart</span></button>
+      <span class="grow"></span>
+      <button class="btn ghost small" id="btnSorter" type="button" title="Slide sorter: see and arrange every slide"><svg class="i"><use href="#d-sorter"/></svg><span class="sl-lbl">Sorter</span></button>
+      <div class="sl-zoom">
+        <button class="btn ghost icon small" id="zOut" type="button" title="Zoom out (Ctrl+-)" aria-label="Zoom out"><svg class="i"><use href="#d-zout"/></svg></button>
+        <button class="btn ghost small sl-zl" id="zLabel" type="button" title="Fit (Ctrl+0)">100%</button>
+        <button class="btn ghost icon small" id="zIn" type="button" title="Zoom in (Ctrl+=)" aria-label="Zoom in"><svg class="i"><use href="#d-zin"/></svg></button>
+      </div>
+    </div>
+
+    <div class="sl-body">
+      <aside class="sl-strip" id="strip" aria-label="Slides" tabindex="0"></aside>
+      <div class="sl-center">
+        <div class="sl-stage" id="stage" tabindex="0" aria-label="Slide canvas. Click an object to select it, double-click text to type, arrow keys move the selection.">
+          <canvas id="cv"></canvas>
+          <textarea id="textEdit" class="sl-textedit" spellcheck="true" aria-label="Edit text" hidden></textarea>
+        </div>
+        <label class="sl-notes"><span class="sl-nlabel">Speaker notes</span><textarea class="textarea prose" id="notes" dir="auto" rows="3" placeholder="Notes for this slide. Only you see them, in the presenter view."></textarea></label>
+      </div>
+      <aside class="sl-props" id="props" aria-label="Format"></aside>
+    </div>
+  </div>
+</main>
+<script src="lib/pptxgen.bundle.js"></script>
+<script src="lib/pdf-lib.min.js"></script>
+<script src="js/core.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/themes.js"></script>
+<script src="js/render.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/io.js"></script>
+<script src="js/present.js"></script>
+<script src="js/sample.js"></script>
+<script src="js/editor.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
